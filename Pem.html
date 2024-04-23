@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan - Rumah Makan Padang</title>
+    <link rel="stylesheet" href="pem.css">
+    <script>
+        function showNotification() {
+            alert("Terima kasih atas pemesanan Anda!");
+            alert("Pesanan Anda sedang di siapkan ");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Pemesanan</h1>
+        <h3>Rumah Makan Padang Bahagia</h3>
+    </header>
+
+    <section class="overlay">
+        <div class="popup">
+            <a href="#" class="close-btn" id="closeBtn">&times;</a>
+            <form action="#" method="post" id="orderForm" onsubmit="showNotification()">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="menu">Pilih Menu:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="menu1" name="menu" value="Nasi Padang" checked aria-label="Nasi Padang">
+                        <label for="menu1">Nasi Padang</label>
+                        <input type="radio" id="menu2" name="menu" value="Rendang" aria-label="Rendang">
+                        <label for="menu2">Rendang</label>
+                        <input type="radio" id="menu3" name="menu" value="Nasi Kambing" aria-label="Nasi Kambing">
+                        <label for="menu3">Nasi Kambing</label>
+                        <input type="radio" id="menu4" name="menu" value="Gulai Kambing" aria-label="Gulai Kambing">
+                        <label for="menu4">Gulai Kambing</label>
+                        <input type="radio" id="promo1" name="menu" value="Promo 1" aria-label="Promo 1">
+                        <label for="promo1">Promo 1</label>
+                        <input type="radio" id="promo2" name="menu" value="Promo 2" aria-label="Promo 2">
+                        <label for="promo2">Promo 2</label>
+                        <input type="radio" id="promo3" name="menu" value="Promo 3" aria-label="Promo 3">
+                        <label for="promo3">Promo 3</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Jumlah Pesanan:</label>
+                    <input type="number" id="quantity" name="quantity" required min="1">
+                </div>
+                <div class="form-group">
+                    <label for="notes">Catatan Tambahan:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <button type="submit">Pesan</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f26c4f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.promo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.promo-item {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.promo-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+strong {
+    color: #f26c4f;
+}
